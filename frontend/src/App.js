@@ -1,20 +1,16 @@
-import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import "./App.css";
-import Register from "./Register.js";
-import About from "./About.js";
-import Login from "./Login.js";
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route exact path="/" element={<Register />} />
-        <Route exact path="about" element={<About />} />
-        <Route exact path="login" element={<Login />} />
-      </Routes>
-    </div>
-  );
+import './App.css';
+import LoginForm from './ui/LoginForm';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="container-fluid">
+        <LoginForm />
+      </div>
+    );
+  }
 }
 
 export default App;
