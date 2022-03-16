@@ -14,7 +14,7 @@ module.exports = (req, res, next) => {
 
   const [scheme, token] = parts;
 
-  /* /começando a regx ^ indica o inicio da verificação Bearer a palavra que ta buscando. $ para terminar e fecha com / o i indicar que é case sensitive */
+  /* /começando a regx ^ indica o inicio da verificação Bearer a palavra que ta buscando. $ para terminar e fecha com / o i indicar que é case insensitive */
   if (!/^Bearer$/i.test(scheme))
     return res.json({ message: "token malformatatted", success: false });
 
