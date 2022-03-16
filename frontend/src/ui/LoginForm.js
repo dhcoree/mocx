@@ -107,11 +107,10 @@ class LoginForm extends Component {
             data-target="#authenticatedModal"
             data-whatever="@mdo"
           >
-            Call Authenticated only API
+            Logado com sucesso!
           </button>
           <small id="cpfHelp" className="form-text text-muted">
-            Only registered and logged users can call and see the list. Plese
-            click the button above to call the API.
+            Somente usuários logados podem ver essa mensagem!
           </small>
         </div>
       );
